@@ -2,7 +2,7 @@
 
 #### Readme WIP
 
-This plugin allows for records to be typecasted based on pod metadata, and is to be used in conjunction with the [kubernetes metadata filter](https://github.com/fabric8io/fluent-plugin-kubernetes_metadata_filter).
+This plugin allows for records to be typecasted based on pod metadata, and is to be used in conjunction with the [kubernetes metadata](https://github.com/fabric8io/fluent-plugin-kubernetes_metadata_filter) filter.
 
 It is assumed that pods will be logging in JSON format, and parsed by the fluentd `json` parser. 
 
