@@ -15,11 +15,11 @@ It is assumed that pods will be logging in JSON format, and parsed by the fluent
 Fluentd should be configured with the kubenetes metadata filter mentioned above, with `annotation_match` specified (to add the required annotation `fluentd.ukfast.io/field-types` to the record):
 
 ```xml
-    <filter kubernetes.**>
-      @id filter_kubernetes_metadata
-      @type kubernetes_metadata
-      annotation_match [ "fluentd.+"]
-    </filter>
+<filter kubernetes.**>
+    @id filter_kubernetes_metadata
+    @type kubernetes_metadata
+    annotation_match [ "fluentd.+"]
+</filter>
 ```
 
 Next, pods which require record typecasting should have the following annotation defined. This annotation has a JSON value mapping record keys to required cast type:
