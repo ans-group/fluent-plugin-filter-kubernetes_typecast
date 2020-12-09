@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name        = 'fluent-plugin-filter-kubernetes_typecast'
-    s.version     = '0.1.0'
+    s.version     = '0.1.4'
     s.date        = '2020-07-12'
     s.summary     = "Fluent typecast plugin"
     s.description = "A plugin to allow records to be typecasted based on kubernetes annotations"
