@@ -27,7 +27,7 @@ Fluentd should be configured with the kubernetes metadata filter mentioned above
 Next, the typecast filter should be added:
 
 ```xml  
-<filter **>
+<filter kubernetes.**>
   @type kubernetes_typecast
 </filter>
 ```
