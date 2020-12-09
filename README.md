@@ -24,7 +24,15 @@ Fluentd should be configured with the kubernetes metadata filter mentioned above
 </filter>
 ```
 
-Next, pods which require record typecasting should have the following annotation defined. This annotation has a JSON value, mapping record keys to required cast type:
+Next, the typecast filter should be added:
+
+```xml  
+<filter **>
+  @type kubernetes_typecast
+</filter>
+```
+
+Finally, pods which require record typecasting should have the following annotation defined. This annotation has a JSON value, mapping record keys to required cast type:
 
 ```yaml
 fluentd.ukfast.io/field-types: '{"record_key_here":"string"}'
